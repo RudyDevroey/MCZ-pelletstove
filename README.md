@@ -7,6 +7,6 @@ Materials needed:
 
 - 1x Esp8266 microcontroller (I used an bare esp12-e, but a D1 mini or Nodemcu will work too).
 
-- 4 EL817 optocouplers.
+- 4 PC817 optocouplers.
 
 - Basic solder skill is needed to attach the wires to the RC main board.
