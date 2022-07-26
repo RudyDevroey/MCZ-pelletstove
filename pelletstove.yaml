@@ -30,5 +30,33 @@ captive_portal:
     
 switch:
   - platform: gpio
-    pin: 2
+    pin: 14
     name: "A"
+    id: pellet_A
+    on_turn_on:
+    - delay: 500ms
+    - switch.turn_off: pellet_A
+
+  - platform: gpio
+    pin: 12
+    name: "Up"
+    id: pellet_UP
+    on_turn_on:
+    - delay: 500ms
+    - switch.turn_off: pellet_UP
+    
+  - platform: gpio
+    pin: 13
+    name: "On/Off"
+    id: pellet_ONOFF
+    on_turn_on:
+    - delay: 500ms
+    - switch.turn_off: pellet_ONOFF
+    
+  - platform: gpio
+    pin: 5
+    name: "Down"
+    id: pellet_DOWN
+    on_turn_on:
+    - delay: 500ms
+    - switch.turn_off: pellet_DOWN
