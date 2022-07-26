@@ -50,7 +50,7 @@ switch:
     name: "On/Off"
     id: pellet_ONOFF
     on_turn_on:
-    - delay: 500ms
+    - delay: 3000ms
     - switch.turn_off: pellet_ONOFF
     
   - platform: gpio
